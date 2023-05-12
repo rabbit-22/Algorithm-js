@@ -1,5 +1,6 @@
 function solution(priorities, location) {
   let index = Array.from({ length: priorities.length }, (_, i) => i); // 인덱스
+  console.log(index, priorities);
   let count = 0; // 출력 횟수
   while (priorities.length) {
     // 대기목록이 비어있을 때까지 반복
@@ -17,3 +18,5 @@ function solution(priorities, location) {
     }
   }
 }
+
+solution([2, 1, 3, 2], 2);
